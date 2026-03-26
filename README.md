@@ -40,7 +40,8 @@ Calculations are derived using a standard FPGA System Clock of 100 MHz (Clock Pe
 ## Finite State Machine (FSM) Diagram
 
 The transmitter transitions deterministically through 5 hardware states based on the internal baud generator tick:
-
+###  FSM State Diagram
+![State Bubble Diagram](images/state_diagram.png)
 1. **IDLE (3'b000)** - Waiting for the start strobe. TX line is High.
 2. **START (3'b001)** - Drives tx = 0 for 1 bit period.
 3. **DATA (3'b010)** - Iterates 8 times, shifting serial data out LSB-to-MSB.
@@ -49,8 +50,17 @@ The transmitter transitions deterministically through 5 hardware states based on
 
 ---
 
-## Simulation and Usage (Vivado)
+## Simulation 
 
-1. Load `uart_transmitter.v` and `uart_tb.v` into Xilinx Vivado.
-2. Run **Behavioral Simulation**.
-3. To test different baud rates, override the parameter in the testbench instantiation:
+###  9600 bps Simulation Waveform
+![Simulation Waveform 9600](images/baudrate_9600.png)
+
+###  115200 bps Simulation Waveform
+![Simulation Waveform 115200](images/baudrate_115200.png)
+
+###  1 Mbps Simulation Waveform
+![Simulation Waveform 1mbps](images/baudrate_1mbps.png)
+
+###  RTL Schematic
+![Vivado RTL Schematic](images/rtl_schematic.png)
+

@@ -53,14 +53,14 @@ The transmitter transitions deterministically through 5 hardware states based on
 ## Simulation 
 
 ###  9600 bps Simulation Waveform
-![Simulation Waveform 9600](images/baudrate_9600.png)
+![Simulation Waveform 9600](images/baud_rate_9600.png)
 
 ###  115200 bps Simulation Waveform
-![Simulation Waveform 115200](images/baudrate_115200.png)
+![Simulation Waveform 115200](images/baud_rate_115200.png)
 
 ###  1 Mbps Simulation Waveform
-![Simulation Waveform 1mbps](images/baudrate_1mbps.png)
+![Simulation Waveform 1mbps](images/baud_rate_1mbps.png)
 
 ###  RTL Schematic
-![Vivado RTL Schematic](images/rtl_schematic.png)
+![Vivado RTL Schematic](images/schematic.png)
 
